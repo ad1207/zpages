@@ -1,0 +1,54 @@
+
+.box {
+    display: flex;
+    min-width: 500px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+
+.form_gap{
+    padding: auto;
+}
+
+
+  .helper_text{
+    display: flex;
+    padding-bottom: 1rem;
+    font-size: 10px;
+    justify-content: center;
+}
+
+.imageStack {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+	position: relative;
+  width: 100%;
+  background-color: #ffc62d;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.box {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 100px;
+
+}
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+}
+
+.rive {
+    // padding-left: 400px;
+    
+    min-width: 500px;
+    min-height: 500px;
+    
+}

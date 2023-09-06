@@ -1,0 +1,57 @@
+.poster_wrap {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr 1fr;
+
+	.left {
+		background-color: #f5f5f5;
+		padding: 2rem 3rem;
+		margin-top: 53px;
+		height: calc(100% - 53px);
+
+		.title {
+			font-size: 1rem;
+			color: #fff;
+			font-weight: 400;
+		}
+	}
+	.right {
+		background-color: #fff;
+		padding: 2rem;
+
+		margin-top: 53px;
+		height: calc(100% - 53px);
+	}
+}
+
+.formGap {
+	padding: 0.5rem 0;
+}
+
+.textCenter {
+	padding: 0.5rem 0;
+	text-align: center;
+}
+
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.dropzone {
+	height: 8rem;
+	margin: 1rem;
+	padding: 1rem;
+	border: 2px dashed salmon;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.active {
+	border: 2px solid rebeccapurple;
+}

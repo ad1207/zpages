@@ -1,0 +1,104 @@
+.cat_wrap {
+	display: grid;
+	height: 100vh;
+
+	.left {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 400px;
+		height: calc(100% - 53px);
+		margin-top: 53px;
+		padding: 2rem;
+		background-color: #f2f2f2;
+
+		.title {
+			color: #333;
+			font-weight: 400;
+			font-size: 1rem;
+			letter-spacing: 1px;
+		}
+	}
+
+	.right {
+		width: calc(100% - 400px);
+		height: calc(100% - 53px);
+		margin-top: 53px;
+		margin-left: 400px;
+		padding: 2rem;
+		background-color: #f5f5f5;
+	}
+}
+
+.formGap {
+	padding: 2rem 0;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.catList {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+
+	padding: 0.4rem 1rem;
+	font-weight: normal;
+	font-size: 0.9rem;
+	background-color: #fff;
+	border-bottom: 1px solid lightgray;
+}
+
+.catList:hover {
+	background-color: #f8fcff;
+	border-left: 1px solid blue;
+	cursor: pointer;
+}
+
+.catName {
+	color: #000;
+	font-size: 0.9rem;
+}
+
+.slug {
+	font-size: 0.8rem;
+	opacity: 0.8;
+}
+
+.catListTitle {
+	position: sticky;
+	top: 53px;
+	width: 80%;
+
+	padding: 0.7rem;
+	font-size: 1rem;
+	background-color: #cecece;
+}
+
+.catDel {
+	padding: 0.2rem;
+}
+
+.backToAdd {
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.btnGroup {
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.blog_post_paragraph{
+	color:red;
+	padding: 2rem;
+}

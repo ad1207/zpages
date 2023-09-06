@@ -1,0 +1,151 @@
+@import url('http://fonts.cdnfonts.com/css/graphik');
+
+.container {
+	display: flex;
+}
+
+.links_categories {
+	width: 26%;
+	border-right: 1px solid;
+	padding: 40px 30px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-size: 20px;
+	margin-bottom: 3rem;
+}
+
+.list {
+	list-style: none;
+	padding-bottom: 35px;
+	border-bottom: 1px solid #e3e6eb;
+}
+
+.list_items {
+	margin-top: 1rem;
+	padding: 0.5rem 0;
+}
+
+.list_links {
+	text-decoration: none;
+	color: #000;
+	font-size: 1rem;
+}
+
+.search {
+	margin-top: 25px;
+}
+
+.search input {
+	margin-top: 5px;
+	height: 30px;
+}
+
+.links {
+	margin-top: 4rem;
+}
+
+.btn {
+	color: white;
+	padding: 15px 40px;
+	background: blue;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 0.4px;
+	margin-bottom: 3.5rem;
+}
+
+.links_icons {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.links_icons * {
+	height: 24px;
+	width: 24px;
+	color: #43464d;
+}
+
+.hashtag {
+	color: #666;
+	font-size: 14.5px;
+	font-weight: 300;
+	border-bottom: 1px solid;
+	margin-right: 105px;
+	padding-bottom: 2px;
+}
+
+.main_content {
+	padding: 3rem 5rem;
+	width: 100%;
+}
+
+.getStarted_wrapper {
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #43464d;
+	width: 100%;
+}
+
+.getStarted_btn {
+	width: max-content;
+	background: #000;
+	font-size: 14.5px;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	padding: 1rem 1.75rem;
+	margin-left: auto;
+	letter-spacing: 0.5px;
+}
+
+.new_blogs {
+	margin-top: 2.5rem;
+}
+
+.new_text {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 40px;
+}
+
+.new_title {
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.all_new {
+	margin-bottom: 6.5px;
+	padding-bottom: 2px;
+	letter-spacing: 0.5px;
+	font-weight: 500;
+	font-size: 14.5px;
+	border-bottom: 1px solid black;
+}
+
+.new_cards_left {
+	display: flex;
+}
+
+.new_card1 .card_title {
+	margin-top: 2rem;
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	margin-bottom: 1rem;
+}
+
+.new_card1:hover {
+	padding: 2rem;
+	border: 1px solid black;
+	transition: 0.3s;
+}
+
+.category {
+	font-size: 12px;
+}

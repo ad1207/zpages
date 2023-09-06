@@ -1,0 +1,50 @@
+.background {
+	// width: 100px;
+	// height: 100px;
+	// background-color: red;
+	z-index: 1;
+	position: inherit;
+	// top:50px;
+	// left:50px;
+}
+
+.content {
+	// width: 100px;
+	// height: 100px;
+	// background-color: blue;
+	z-index: -1;
+	position: inherit;
+	// top:0px;
+	// left:0px;
+}
+
+.imageStack {
+	position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.imageBottom {
+	position: inherit;
+	right: 0;
+	top: 0;
+	width: 80%; // this is an arbitrary width, depends on the design
+	z-index: 1;
+}
+
+.box {
+	position: relative;
+}
+
+.contentTop {
+	padding-top: 20px; // arbitrary value
+	padding-right: 20%;
+	position: inherit;
+	z-index: -1; // arbitrary value
+	//width: 80%; // arbitrary value
+}
+
+//   img {
+//     width: 100%;
+//     display: block;
+//   }
