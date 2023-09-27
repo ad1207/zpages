@@ -110,7 +110,9 @@ export default function Index({params}) {
                 const response2 = await axios.get(`/api/blog/blogByNano/${blog_id}`);
                 setBlog(response2.data);
                 if(response2.data.tag.length > 0){
-                    const tagresp = await axios.get(`/api/getTags/${response2.data.tag}`);
+					console.log(response2.data.tag)
+					let tags = response2.data.tag
+                    const tagresp = await axios.get(`/api/getTags/${tags}`);
 					console.log("tagresp",tagresp);
 					if(tagresp.statusText==="OK")
                     	setSelectedTag(tagresp.data);

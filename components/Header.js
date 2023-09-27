@@ -11,7 +11,7 @@ import path from "path";
 import axios from "axios";
 
 const Header = ({ username = "" }) => {
-   // const snap = useSnapshot(content);
+  //  const snap = useSnapshot(content);
     const router = useRouter();
     const pathname = usePathname();
     const [anchorEl, setAnchorEl] = useState(null);
@@ -62,7 +62,8 @@ const Header = ({ username = "" }) => {
         published_status: "Y",
         blog_id: pathname.split("/")[3],
       };
-     // if (snap.obj != null) requestBody["content"] = snap.obj;
+      console.log("requestBody", requestBody)
+    //  if (snap.obj != null) requestBody["content"] = snap.obj;
       let resp = await axios.put(`/api/blog/publish`, requestBody);
       if (resp.status === 200) {
         // Router.push('/dashboard')
@@ -79,12 +80,12 @@ const Header = ({ username = "" }) => {
     };
     //disable header
     // if(pathname.startsWith('/lead-page/') || pathname.startsWith('/blog/')) ;
-    console.log("pathname", pathname);
-    
+
+    console.log(pathname);
     
     useEffect(() => {
       if(pathname.startsWith('/lead-page/') || pathname.startsWith('/blog/')) {
-        console.log(pathname)
+        console.log("pathname",pathname)
         setIsDisable(true);
       }
       else{
