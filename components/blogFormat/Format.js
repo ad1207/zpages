@@ -17,7 +17,7 @@ const Format = ({ blog_format, blogs }) => {
 							return (
 								<div key={index} className={styles.list_blogs}>
 									<div className={styles.thumbnail}>
-										<Image src={item.thumbnail} height="155px" width="180px" alt="" />
+										<Image src={item.thumbnail} height={155} width={180} alt="" />
 										<div>{item.title}</div>
 									</div>
 									<div className={styles.footer}>

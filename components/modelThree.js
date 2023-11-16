@@ -32,8 +32,8 @@ const Format3 = ({ blog_format, blogs, categories, data }) => {
 						<div className={styles.main_blog}>
 							<Image
 								src="https://res.cloudinary.com/sanjayaalam/image/upload/v1636976325/flow1_awvs1s.png"
-								width="785px"
-								height="400px"
+								width={785}
+								height={400}
 								alt=""
 								className={styles.main_img}
 							/>
@@ -55,8 +55,8 @@ const Format3 = ({ blog_format, blogs, categories, data }) => {
 									<div className={styles.sub_category} key={index}>
 										<Image
 											src="https://res.cloudinary.com/sanjayaalam/image/upload/v1636980147/cat1_p4e4u9.jpg"
-											width="100px"
-											height="100px"
+											width={100}
+											height={100}
 											alt=""
 											className={styles.main_img}
 										/>
@@ -82,8 +82,8 @@ const Format3 = ({ blog_format, blogs, categories, data }) => {
 										<Image
 											src="https://res.cloudinary.com/sanjayaalam/image/upload/v1636981721/blog1_eepo2h.jpg"
 											className={styles.main_img}
-											width="425px"
-											height="300px"
+											width={425}
+											height={300}
 											alt=""
 										></Image>
 										<div className={styles.blog_heading}>
@@ -133,8 +133,8 @@ const Format3 = ({ blog_format, blogs, categories, data }) => {
 												<Image
 													src="https://res.cloudinary.com/sanjayaalam/image/upload/v1637134502/feature1_d1wud8.jpg"
 													// className={styles.main_img}
-													width="400px"
-													height="150px"
+													width={400}
+													height={150}
 													alt=""
 												></Image>
 												<div

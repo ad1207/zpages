@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import styles from '../styles/blog-format/format1.module.scss';
 
 const Format1 = ({ blog_format, blogs }) => {
 	const [isClicked, setisClicked] = useState(false);
@@ -15,9 +16,9 @@ const Format1 = ({ blog_format, blogs }) => {
 							<div className={styles.logo_img}>
 								<Image
 									src="https://crazyegg.com/blog/wp-content/themes/daily-egg-genesis/images/crazyegg_logo_blog.svg"
-									width="250px"
+									width={250}
 									alt=""
-									height="65px"
+									height={65}
 								></Image>
 							</div>
 						</div>
@@ -33,8 +34,8 @@ const Format1 = ({ blog_format, blogs }) => {
 									<Image
 										src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"
 										alt=""
-										width="36px"
-										height="36px"
+										width={36}
+										height={36}
 									/>
 								</Link>
 							</div>
@@ -69,8 +70,8 @@ const Format1 = ({ blog_format, blogs }) => {
 				<div className={styles.main_blog}>
 					<Image
 						src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/10/16102810/content-marketing-strategy-1.jpg"
-						width="625px"
-						height="350px"
+						width={625}
+						height={350}
 						alt=""
 						className={styles.main_img}
 					/>
@@ -87,8 +88,8 @@ const Format1 = ({ blog_format, blogs }) => {
 						<div className={styles.main_author}>
 							<Image
 								src="https://secure.gravatar.com/avatar/8395a7bf041405fcfd48014270d4005f?s=96&d=mm&r=g"
-								width="45px"
-								height="45px"
+								width={45}
+								height={45}
 								alt=""
 								className={styles.main_author_img}
 							/>
@@ -108,8 +109,8 @@ const Format1 = ({ blog_format, blogs }) => {
 												src={item.thumbnail}
 												className={styles.popular_img}
 												alt=""
-												width="240px"
-												height="125px"
+												width={240}
+												height={125}
 											/>
 											<div className={styles.popular_category}>Design</div>
 											<div className={styles.popular_blog_title}>{item.title}</div>
@@ -125,9 +126,9 @@ const Format1 = ({ blog_format, blogs }) => {
 							<Image
 								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
 								className={styles.featured_img}
-								width="450px"
+								width={450}
 								alt=""
-								height="200px"
+								height={200}
 							></Image>
 							<div className={styles.featured_category}>Reviews</div>
 							<div className={styles.featured_title}>Best Digital Marketing Services</div>
@@ -141,9 +142,9 @@ const Format1 = ({ blog_format, blogs }) => {
 							<Image
 								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
 								className={styles.featured_img}
-								width="450px"
+								width={450}
 								alt=""
-								height="200px"
+								height={200}
 							></Image>
 							<div className={styles.featured_category}>Reviews</div>
 							<div className={styles.featured_title}>Best Digital Marketing Services</div>
@@ -157,59 +158,9 @@ const Format1 = ({ blog_format, blogs }) => {
 							<Image
 								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
 								className={styles.featured_img}
-								width="450px"
+								width={450}
 								alt=""
-								height="200px"
-							></Image>
-							<div className={styles.featured_category}>Reviews</div>
-							<div className={styles.featured_title}>Best Digital Marketing Services</div>
-							<div className={styles.featured_desc}>
-								Want to come in under budget and still crush your marketing goals for this quarter? You
-								can easily do that starting today. How? By using…
-							</div>
-							<div className={styles.featured_featured}>Featured</div>
-						</div>
-					</div>
-					<div className={styles.featured}>
-						<div className={styles.featured_blog}>
-							<Image
-								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
-								className={styles.featured_img}
-								width="450px"
-								alt=""
-								height="200px"
-							></Image>
-							<div className={styles.featured_category}>Reviews</div>
-							<div className={styles.featured_title}>Best Digital Marketing Services</div>
-							<div className={styles.featured_desc}>
-								Want to come in under budget and still crush your marketing goals for this quarter? You
-								can easily do that starting today. How? By using…
-							</div>
-							<div className={styles.featured_featured}>Featured</div>
-						</div>
-						<div className={styles.featured_blog}>
-							<Image
-								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
-								className={styles.featured_img}
-								width="450px"
-								alt=""
-								height="200px"
-							></Image>
-							<div className={styles.featured_category}>Reviews</div>
-							<div className={styles.featured_title}>Best Digital Marketing Services</div>
-							<div className={styles.featured_desc}>
-								Want to come in under budget and still crush your marketing goals for this quarter? You
-								can easily do that starting today. How? By using…
-							</div>
-							<div className={styles.featured_featured}>Featured</div>
-						</div>
-						<div className={styles.featured_blog}>
-							<Image
-								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
-								className={styles.featured_img}
-								width="450px"
-								alt=""
-								height="200px"
+								height={200}
 							></Image>
 							<div className={styles.featured_category}>Reviews</div>
 							<div className={styles.featured_title}>Best Digital Marketing Services</div>
@@ -225,9 +176,59 @@ const Format1 = ({ blog_format, blogs }) => {
 							<Image
 								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
 								className={styles.featured_img}
-								width="450px"
+								width={450}
 								alt=""
-								height="200px"
+								height={200}
+							></Image>
+							<div className={styles.featured_category}>Reviews</div>
+							<div className={styles.featured_title}>Best Digital Marketing Services</div>
+							<div className={styles.featured_desc}>
+								Want to come in under budget and still crush your marketing goals for this quarter? You
+								can easily do that starting today. How? By using…
+							</div>
+							<div className={styles.featured_featured}>Featured</div>
+						</div>
+						<div className={styles.featured_blog}>
+							<Image
+								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
+								className={styles.featured_img}
+								width={450}
+								alt=""
+								height={200}
+							></Image>
+							<div className={styles.featured_category}>Reviews</div>
+							<div className={styles.featured_title}>Best Digital Marketing Services</div>
+							<div className={styles.featured_desc}>
+								Want to come in under budget and still crush your marketing goals for this quarter? You
+								can easily do that starting today. How? By using…
+							</div>
+							<div className={styles.featured_featured}>Featured</div>
+						</div>
+						<div className={styles.featured_blog}>
+							<Image
+								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
+								className={styles.featured_img}
+								width={450}
+								alt=""
+								height={200}
+							></Image>
+							<div className={styles.featured_category}>Reviews</div>
+							<div className={styles.featured_title}>Best Digital Marketing Services</div>
+							<div className={styles.featured_desc}>
+								Want to come in under budget and still crush your marketing goals for this quarter? You
+								can easily do that starting today. How? By using…
+							</div>
+							<div className={styles.featured_featured}>Featured</div>
+						</div>
+					</div>
+					<div className={styles.featured}>
+						<div className={styles.featured_blog}>
+							<Image
+								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
+								className={styles.featured_img}
+								width={450}
+								alt=""
+								height={200}
 							></Image>
 							<div className={styles.featured_category}>Reviews</div>
 							<div className={styles.featured_title}>Best Digital Marketing Services</div>
@@ -251,9 +252,9 @@ const Format1 = ({ blog_format, blogs }) => {
 							<Image
 								src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2020/12/01094323/image3-1536x740.png"
 								className={styles.featured_img}
-								width="450px"
+								width={450}
 								alt=""
-								height="200px"
+								height={200}
 							></Image>
 							<div className={styles.featured_category}>Reviews</div>
 							<div className={styles.featured_title}>Best Digital Marketing Services</div>

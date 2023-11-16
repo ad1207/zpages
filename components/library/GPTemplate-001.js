@@ -59,6 +59,8 @@ const Template = () => {
 							src="https://res.cloudinary.com/sanjayaalam/image/upload/v1637326022/play-button_lqy4mb.png"
 							alt=""
 							className={styles.play_icon}
+							width={50}
+							height={50}
 						/>
 					</div>
 				</div>
@@ -67,6 +69,8 @@ const Template = () => {
 						src="https://images.unsplash.com/photo-1617777938240-9a1d8e51a47d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1031&q=80"
 						alt=""
 						className={styles.image}
+						width={600}
+						height={600}
 					/>
 					<div className={styles.right_corner} ref={rightCorner}>
 						<div>Explore</div>

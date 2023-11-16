@@ -1,6 +1,6 @@
 'use client'
 import {yupResolver} from '@hookform/resolvers/yup';
-import { MenuItem, Dialog, DialogContent, Snackbar, Alert, Button } from '@mui/material';
+import { MenuItem, Dialog, DialogContent, Snackbar, Alert, Button, FormControl, InputLabel, Select } from '@mui/material';
 import axios from 'axios';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -12,6 +12,7 @@ import { FormInputDropdown } from '../components/forms/FormInputDropdown';
 import { useAddRepo } from '../hooks/repo-hook';
 import styles from '../styles/RepoSidebar.module.scss';
 import {IRepo} from '../model/Repo'
+
 
 interface IFormData {
 	name: string;
@@ -187,9 +188,9 @@ const RepoSidebar = ({ repos, reloadRepos, company_id, company_nano }) => {
 							<span className={styles.nav_text}>Settings</span>
 						</a> */}
 				<div className={styles.last}>
-					{/* <li className={styles.ul}>
+					<li className={styles.ul}>
 						<FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-							<InputLabel id="demo-simple-select-standard-label">Age</InputLabel>
+							<InputLabel id="demo-simple-select-standard-label">Blog Format</InputLabel>
 							<Select
 								labelId="demo-simple-select-standard-label"
 								id="demo-simple-select-standard"
@@ -207,14 +208,14 @@ const RepoSidebar = ({ repos, reloadRepos, company_id, company_nano }) => {
 								))}
 							</Select>
 						</FormControl>
-					</li> */}
+					</li>
 					<li className={styles.ul}>
 						<a className={styles.a} onClick={() => handleBlogHomeFormat()}>
 							<span className={styles.nav_text}>View Blog Home</span>
 						</a>
 					</li>
 					<li className={styles.ul}>
-						<a className={styles.a} href="http://startific.com">
+						<a className={styles.a} href='http://startific.com'>
 							<Image src="/static/images/edit.svg" alt="edit" width={24} height={24} />
 							<span className={styles.nav_text}>Settings</span>
 						</a>
